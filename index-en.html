@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Smart Internship Platform - Jeddah</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header id="top">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 Smart Internship Platform - Jeddah</h2>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index-en.html" class="nav-link active">Home</a>
+          <a href="internships-en.html" class="nav-link">Manual Search</a>
+          <a href="ai-recommendations-en.html" class="nav-link">Smart Recommendations</a>
+          <a href="index-en.html#how-it-works" class="nav-link">How It Works</a>
+          <a href="about-us-en.html" class="nav-link">About Us</a>
+          <a href="contact-us-en.html" class="nav-link">Contact</a>
+
+          <!-- Language -->
+          <a href="index.html" class="nav-link">العربية</a>
+
+          <!-- Guest (default) -->
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-google" href="ai-recommendations-en.html" aria-label="Login">
+              <img src="https://www.google.com/favicon.ico" alt="Google" width="20" height="20">
+              Login Portal
+            </a>
+          </div>
+
+          <!-- Logged-in UI (ready for backend) -->
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" role="button" tabindex="0" aria-label="User menu">
+              <img id="userAvatar" src="https://i.pravatar.cc/80?img=12" alt="User" class="user-avatar">
+              <span id="userName">User Name</span>
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </div>
+
+            <!-- removed aria-label from div to satisfy validator -->
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="about-us-en.html">Profile</a>
+              <a href="ai-recommendations-en.html">My Recommendations</a>
+              <a href="internships-en.html">Saved Opportunities</a>
+              <hr>
+              <a href="index-en.html">Logout</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Navigation menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="home" aria-label="Platform introduction">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Find the internship opportunity that fits your career path</h1>
+          <p class="hero-subtitle">
+            A platform that helps students and job seekers discover cooperative and summer internship opportunities in Jeddah,
+            and provides a guided matching experience based on skills, major, and interests.
+          </p>
+
+          <!-- Added h2 to avoid h1 -> h3 heading skip -->
+          <h2 class="section-title">Platform Features</h2>
+
+          <!-- removed aria-label from div to satisfy validator -->
+          <div class="hero-features">
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🤖</div>
+              <h3>Accurate Recommendations</h3>
+              <p>Rank opportunities by profile match with a simple explanation of why each is recommended.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">📍</div>
+              <h3>Flexible Location Options</h3>
+              <p>Explore internships in Jeddah, remote roles, or flexible attendance options based on the organization.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">✉️</div>
+              <h3>Clear Application Experience</h3>
+              <p>Organized details for each opportunity to support decisions and help you apply with confidence.</p>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-large btn-primary" href="ai-recommendations-en.html">Start Smart Recommendations</a>
+            <a class="btn btn-large btn-outline" href="internships-en.html">Browse Opportunities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works" aria-label="How the platform works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number" aria-hidden="true">1</div>
+            <div class="step-icon" aria-hidden="true">🔐</div>
+            <h3>Access the Platform</h3>
+            <p>Open the platform and browse pages and services from one place.</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">←</div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">2</div>
+            <div class="step-icon" aria-hidden="true">📄</div>
+            <h3>Upload Your CV</h3>
+            <p>Upload your resume to support skill extraction and improve matching accuracy.</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">←</div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">3</div>
+            <div class="step-icon" aria-hidden="true">🎯</div>
+            <h3>Get Recommendations</h3>
+            <p>View opportunities ranked by match score with a short explanation.</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">←</div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">4</div>
+            <div class="step-icon" aria-hidden="true">✉️</div>
+            <h3>Apply and Follow Up</h3>
+            <p>Review details and requirements, then apply to the opportunities that fit you best.</p>
+          </div>
+        </div>
+
+        <div class="search-card value-card">
+          <h2 class="value-title">Platform Value</h2>
+          <p class="value-text">
+            Centralize internship opportunities in one place, reduce search time,
+            and provide a clearer and faster way to choose the most suitable opportunity.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Website footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Smart Internship Platform - Jeddah</h3>
+          <p>We help users find suitable internship opportunities in Jeddah to build experience and a stronger career path.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index-en.html">Home</a>
+          <a href="internships-en.html">Manual Search</a>
+          <a href="ai-recommendations-en.html">Smart Recommendations</a>
+          <a href="about-us-en.html">About Us</a>
+          <a href="contact-us-en.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Internship Platform - Jeddah | All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- No JS now: dropdown remains hidden.
+       Later with backend/JS: you only toggle (hidden) classes for userSection/authSection + dropdown. -->
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Recommendations | Smart Internship Platform - Jeddah</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 Smart Internship Platform - Jeddah</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index-en.html" class="nav-link">Home</a>
+          <a href="internships-en.html" class="nav-link">Manual Search</a>
+          <a href="ai-recommendations-en.html" class="nav-link active">Smart Recommendations</a>
+          <a href="about-us-en.html" class="nav-link">About Us</a>
+          <a href="contact-us-en.html" class="nav-link">Contact</a>
+
+          <a href="ai-recommendations.html" class="nav-link">العربية</a>
+
+          <a class="btn btn-google" href="ai-recommendations-en.html" aria-label="Login portal">
+            <img src="https://www.google.com/favicon.ico" alt="Google" width="20" height="20">
+            Login
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Navigation menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="Recommendations page heading">
+      <div class="container">
+        <h1 class="section-title">🤖 Smart Recommendations</h1>
+        <p class="page-lead">
+          Upload your CV to extract skills and qualifications, then view the most compatible opportunities in Jeddah in a clear, organized way.
+        </p>
+      </div>
+    </section>
+
+    <!-- Upload + Info -->
+    <section class="search-section" aria-label="Upload CV section">
+      <div class="container">
+
+        <!-- Upload Card -->
+        <section class="search-card" aria-label="Upload your CV">
+          <h2 class="card-title">Upload Your CV</h2>
+          <p class="card-text">
+            We support PDF and DOCX files. Extracted information will be used to improve recommendation accuracy and identify the best-matching opportunities.
+          </p>
+
+          <input type="file" id="cvFile" class="file-input" accept=".pdf,.doc,.docx">
+
+          <button
+            class="upload-area"
+            type="button"
+            onclick="document.getElementById('cvFile').click()"
+            aria-label="Choose CV file"
+          >
+            <span class="upload-icon" aria-hidden="true">📄</span>
+            <span class="upload-title">Choose your CV file</span>
+            <span class="upload-hint">PDF or DOCX — max 5MB</span>
+          </button>
+
+          <p id="fileName" class="note-center"></p>
+
+          <div class="actions-center">
+            <button class="btn btn-primary" type="button">Analyze CV</button>
+            <button type="button" id="removeFile" class="btn btn-outline hidden">Delete file</button>
+            <a class="btn btn-outline" href="internships-en.html">Go to manual search</a>
+          </div>
+
+          <p class="note-center">
+            Extracted skills and recommendation results will appear below.
+          </p>
+        </section>
+
+        <!-- Extracted Skills -->
+        <section class="search-card" aria-label="Extracted skills">
+          <h2 class="card-title">Skills & Qualifications</h2>
+          <p class="card-text">
+            Example of skills that can be extracted from your CV:
+          </p>
+
+          <div class="internship-meta">
+            <span class="meta-tag">HTML</span>
+            <span class="meta-tag">CSS</span>
+            <span class="meta-tag">JavaScript</span>
+            <span class="meta-tag">SQL</span>
+            <span class="meta-tag">Problem Solving</span>
+            <span class="meta-tag">Teamwork</span>
+            <span class="meta-tag">Communication</span>
+          </div>
+        </section>
+
+        <!-- Recommended Results -->
+        <h2 class="section-subtitle">Top Matches</h2>
+        <p class="section-subtext">
+          Results are ranked by match score, with a short explanation of why each one is recommended.
+        </p>
+
+        <section class="internships-grid" aria-label="Recommendation results">
+          <!-- Card 1 -->
+          <article class="internship-card">
+            <div class="card-top">
+              <div class="match-score">Match 94%</div>
+
+              <div class="internship-header">
+                <h3 class="internship-title">Front-End Intern</h3>
+                <p class="internship-company">Tech Organization</p>
+              </div>
+            </div>
+
+            <div class="internship-meta">
+              <span class="meta-tag">📍 Jeddah</span>
+              <span class="meta-tag">🏢 On-site</span>
+              <span class="meta-tag">⏱️ Co-op Training</span>
+              <span class="meta-tag">🏢 Large Enterprise</span>
+            </div>
+
+            <p class="internship-description">
+              Contribute to web UI development and improve user experience using modern web technologies within a development team.
+            </p>
+
+            <div class="ai-explanation">
+              <strong>Why recommended:</strong> Strong match with HTML/CSS and JavaScript skills required for front-end development.
+            </div>
+
+            <div class="internship-footer">
+              <span class="meta-tag">📅 12 weeks</span>
+              <div class="button-group">
+                <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="internship-card">
+            <div class="match-score">Match 87%</div>
+
+            <div class="internship-header">
+              <h3 class="internship-title">Software Intern</h3>
+              <p class="internship-company">Digital Solutions Company</p>
+            </div>
+
+            <div class="internship-meta">
+              <span class="meta-tag">📍 Jeddah</span>
+              <span class="meta-tag">🏢 Flexible</span>
+              <span class="meta-tag">⏱️ Co-op Training</span>
+              <span class="meta-tag">🏢 Small / Medium</span>
+            </div>
+
+            <p class="internship-description">
+              Work on a variety of development tasks, contribute to improving system components, and help document requirements.
+            </p>
+
+            <div class="ai-explanation">
+              <strong>Why recommended:</strong> Suitable for strong programming fundamentals, quick learning, and teamwork.
+            </div>
+
+            <div class="internship-footer">
+              <span class="meta-tag">📅 10–12 weeks</span>
+              <div class="button-group">
+                <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="internship-card">
+            <div class="match-score">Match 86%</div>
+
+            <div class="internship-header">
+              <h3 class="internship-title">Database Intern</h3>
+              <p class="internship-company">Data Center & Services</p>
+            </div>
+
+            <div class="internship-meta">
+              <span class="meta-tag">📍 Jeddah</span>
+              <span class="meta-tag">🏢 On-site</span>
+              <span class="meta-tag">⏱️ Summer Internship</span>
+              <span class="meta-tag">🏢 Large Enterprise</span>
+            </div>
+
+            <p class="internship-description">
+              Support the data team by writing queries, improving data quality, and contributing to operational reports.
+            </p>
+
+            <div class="ai-explanation">
+              <strong>Why recommended:</strong> Matches SQL skills and basic data analysis / organization.
+            </div>
+
+            <div class="internship-footer">
+              <span class="meta-tag">📅 8 weeks</span>
+              <div class="button-group">
+                <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Note -->
+        <section class="search-card note-card" aria-label="Note">
+          <h2 class="note-title">Note</h2>
+          <p class="note-text">
+            Recommendations are updated based on available data and organization requirements. You can always use the manual search page to browse all opportunities.
+          </p>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Website footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Smart Internship Platform - Jeddah</h3>
+          <p>A student platform that aims to make it easier to access internships in Jeddah and build stronger professional experience.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index-en.html">Home</a>
+          <a href="internships-en.html">Manual Search</a>
+          <a href="ai-recommendations-en.html">Smart Recommendations</a>
+          <a href="about-us-en.html">About Us</a>
+          <a href="contact-us-en.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Internship Platform - Jeddah | All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/ai.js"></script>
+</body>
+</html>

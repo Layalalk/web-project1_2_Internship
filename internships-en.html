@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Search | Smart Internship Platform - Jeddah</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 Smart Internship Platform - Jeddah</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index-en.html" class="nav-link">Home</a>
+          <a href="internships-en.html" class="nav-link active">Manual Search</a>
+          <a href="ai-recommendations-en.html" class="nav-link">Smart Recommendations</a>
+          <a href="about-us-en.html" class="nav-link">About Us</a>
+          <a href="contact-us-en.html" class="nav-link">Contact</a>
+
+          <!-- Language -->
+          <a href="internships.html" class="nav-link">العربية</a>
+
+          <a class="btn btn-google" href="ai-recommendations-en.html" aria-label="Login">
+            <img src="https://www.google.com/favicon.ico" alt="Google" width="20" height="20">
+            Login
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Navigation menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="Opportunities page heading">
+      <div class="container">
+        <h1 class="section-title">🔎 Manual Opportunity Search</h1>
+        <p class="page-lead">
+          Use search and filters to browse opportunities by location, program type, and organization type.
+        </p>
+      </div>
+    </section>
+
+    <!-- Search + Filters -->
+    <section class="search-section" aria-label="Search and filter opportunities">
+      <div class="container">
+
+        <div class="search-card">
+          <form action="#" method="get">
+            <div class="search-box">
+              <label class="hidden" for="searchInput">Search</label>
+              <input
+                type="text"
+                id="searchInput"
+                name="q"
+                placeholder="Search by company or title (e.g., Software, Data, UI/UX)..."
+                class="search-input"
+                maxlength="80"
+              >
+              <button class="btn btn-primary" type="submit">
+                <span aria-hidden="true">🔍</span> Search
+              </button>
+            </div>
+
+            <!-- removed aria-label from div to satisfy validator -->
+            <div class="filters-grid">
+              <div class="filter-group">
+                <label for="cityFilter">📍 Location</label>
+                <select id="cityFilter" name="city">
+                  <option value="all">All locations</option>
+                  <option value="jeddah">Jeddah</option>
+                  <option value="remote">Remote</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="locationTypeFilter">🏢 Work Mode</label>
+                <select id="locationTypeFilter" name="locationType">
+                  <option value="">All</option>
+                  <option value="onsite">On-site</option>
+                  <option value="remote">Remote</option>
+                  <option value="flex">Flexible</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="typeFilter">⏱️ Program Type</label>
+                <select id="typeFilter" name="internType">
+                  <option value="">All</option>
+                  <option value="coop">Co-op Training</option>
+                  <option value="summer">Summer Internship</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="companyTypeFilter">🏭 Organization Type</label>
+                <select id="companyTypeFilter" name="companyType">
+                  <option value="">All</option>
+                  <option value="startup">Startup</option>
+                  <option value="sme">Small / Medium</option>
+                  <option value="large">Large Enterprise</option>
+                  <option value="gov">Government</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-text" type="reset">Clear filters</button>
+          </form>
+        </div>
+
+        <!-- Results -->
+        <section aria-label="Search results">
+          <!-- Added h2 to avoid h1 -> h3 heading skip -->
+          <h2 class="section-title">Opportunities</h2>
+
+          <div class="internships-grid">
+
+            <!-- Card 1 -->
+            <article class="internship-card">
+              <div class="match-score">Match 92%</div>
+
+              <div class="internship-header">
+                <h3 class="internship-title">Software Engineering Intern</h3>
+                <p class="internship-company">Tech Company</p>
+              </div>
+
+              <div class="internship-meta">
+                <span class="meta-tag">📍 Jeddah</span>
+                <span class="meta-tag">🏢 On-site</span>
+                <span class="meta-tag">⏱️ Co-op Training</span>
+                <span class="meta-tag">🏢 Large Enterprise</span>
+              </div>
+
+              <p class="internship-description">
+                An internship for candidates interested in web development, working with an engineering team,
+                and contributing to improving product quality.
+              </p>
+
+              <div class="ai-explanation">
+                <strong>Requirements summary:</strong> HTML/CSS, JavaScript, programming basics, and teamwork.
+              </div>
+
+              <div class="internship-footer">
+                <span class="meta-tag">📅 12 weeks</span>
+                <div class="button-group">
+                  <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                  <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="internship-card">
+              <div class="match-score">Match 88%</div>
+
+              <div class="internship-header">
+                <h3 class="internship-title">Data Analyst Intern</h3>
+                <p class="internship-company">Analytics & Consulting Firm</p>
+              </div>
+
+              <div class="internship-meta">
+                <span class="meta-tag">📍 Jeddah</span>
+                <span class="meta-tag">🏢 Flexible</span>
+                <span class="meta-tag">⏱️ Summer Internship</span>
+                <span class="meta-tag">🏢 Small / Medium</span>
+              </div>
+
+              <p class="internship-description">
+                Build reports and dashboards, review data to support decision-making, and improve performance insights.
+              </p>
+
+              <div class="ai-explanation">
+                <strong>Requirements summary:</strong> Excel, SQL, analytics basics, and reporting skills.
+              </div>
+
+              <div class="internship-footer">
+                <span class="meta-tag">📅 8 weeks</span>
+                <div class="button-group">
+                  <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                  <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="internship-card">
+              <div class="match-score">Match 84%</div>
+
+              <div class="internship-header">
+                <h3 class="internship-title">Cybersecurity Intern</h3>
+                <p class="internship-company">Government Sector</p>
+              </div>
+
+              <div class="internship-meta">
+                <span class="meta-tag">📍 Jeddah</span>
+                <span class="meta-tag">🏢 On-site</span>
+                <span class="meta-tag">⏱️ Co-op Training</span>
+                <span class="meta-tag">🏛️ Government</span>
+              </div>
+
+              <p class="internship-description">
+                Support core information security tasks, participate in security reviews, and learn policies and procedures.
+              </p>
+
+              <div class="ai-explanation">
+                <strong>Requirements summary:</strong> Networking basics, information security, and risk management concepts.
+              </div>
+
+              <div class="internship-footer">
+                <span class="meta-tag">📅 12–16 weeks</span>
+                <div class="button-group">
+                  <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                  <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="internship-card">
+              <div class="match-score">Match 81%</div>
+
+              <div class="internship-header">
+                <h3 class="internship-title">UI/UX Intern</h3>
+                <p class="internship-company">Startup</p>
+              </div>
+
+              <div class="internship-meta">
+                <span class="meta-tag">🌍 Remote</span>
+                <span class="meta-tag">🏢 Remote</span>
+                <span class="meta-tag">⏱️ Summer Internship</span>
+                <span class="meta-tag">🚀 Startup</span>
+              </div>
+
+              <p class="internship-description">
+                Design user interfaces and experiences, build prototypes, and improve usability based on clear standards.
+              </p>
+
+              <div class="ai-explanation">
+                <strong>Requirements summary:</strong> Figma, UX principles, wireframes, and design documentation.
+              </div>
+
+              <div class="internship-footer">
+                <span class="meta-tag">📅 6–8 weeks</span>
+                <div class="button-group">
+                  <a class="btn btn-outline" href="contact-us-en.html">Inquiry</a>
+                  <a class="btn btn-primary" href="contact-us-en.html">Apply</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Use nav for pagination (valid + semantic) -->
+          <nav class="pagination" aria-label="Pagination">
+            <button class="page-btn active" type="button">1</button>
+            <button class="page-btn" type="button">2</button>
+            <button class="page-btn" type="button">3</button>
+          </nav>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Website footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Smart Internship Platform - Jeddah</h3>
+          <p>A platform that helps students discover internship opportunities in Jeddah and build their career future.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index-en.html">Home</a>
+          <a href="internships-en.html">Manual Search</a>
+          <a href="ai-recommendations-en.html">Smart Recommendations</a>
+          <a href="about-us-en.html">About Us</a>
+          <a href="contact-us-en.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Internship Platform - Jeddah | All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/internships.js"></script>
+</body>
+</html>
